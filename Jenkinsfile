@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven'
-        jdk 'JDK25'
+        maven 'MAVEN'
+        jdk 'JDK21'
     }
 
     stages {
@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/Naveen04jan/ven.git',
+                    url: 'https://github.com/Poorvika2006/ven.git',
                     credentialsId: 'github-token'
             }
         }
